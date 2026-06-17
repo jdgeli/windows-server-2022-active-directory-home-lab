@@ -1,54 +1,40 @@
-Active Directory Domain Services (AD DS)
-Overview
+# Active Directory Domain Services (AD DS)
 
-Active Directory Domain Services (AD DS) is a Microsoft directory service that provides centralized authentication, authorization, and management of users, computers, groups, and network resources within an organization.
+## Objective
 
-This lab demonstrates the deployment and basic administration of an Active Directory environment using Windows Server 2022.
+Install and configure Active Directory Domain Services (AD DS) to create a centralized domain environment for managing users, computers, groups, and network resources.
 
-Objectives
-Install Active Directory Domain Services
-Promote the server to a Domain Controller
-Create a new Active Directory domain
-Verify DNS integration
-Test domain authentication
-Lab Environment
-Component	Configuration
-Server OS	Windows Server 2022
-Client OS	Windows 11 Pro
-Hypervisor	VMware Workstation
-Role Installed	Active Directory Domain Services (AD DS)
-Implementation Steps
-Step 1 - Install AD DS
-Open Server Manager.
-Select Add Roles and Features.
-Install Active Directory Domain Services.
-Wait for the installation to complete.
-Step 2 - Promote Server to Domain Controller
+## Environment
 
-After installing AD DS:
+- Hypervisor: VMware Workstation
+- Server OS: Windows Server 2022 Standard
+- Client OS: Windows 11 Pro
+- Role Installed: Active Directory Domain Services (AD DS)
+- DNS: Installed Automatically
 
-Click Promote this server to a domain controller
-Create a new forest
-Configure the domain name
-Set Directory Services Restore Mode (DSRM) password
-Step 3 - Restart the Server
+## Steps
 
-The server automatically restarts after promotion.
+1. Open **Server Manager**.
+2. Click **Add Roles and Features**.
+3. Select **Active Directory Domain Services (AD DS)**.
+4. Complete the installation wizard.
+5. Click **Promote this server to a domain controller**.
+6. Select **Add a new forest**.
+7. Enter the domain name (e.g., company.local).
+8. Configure the Directory Services Restore Mode (DSRM) password.
+9. Complete the installation and restart the server.
+10. Verify the installation using:
+    - Active Directory Users and Computers
+    - DNS Manager
+    - Group Policy Management Console
 
-Validation
+## Features Configured
 
-The following items were verified:
+- Active Directory Domain Services
+- Domain Controller
+- DNS Server
+- Group Policy Management
 
-Active Directory Users and Computers
-DNS Manager
-Group Policy Management Console
-Domain Controller status
-Skills Demonstrated
-Windows Server Administration
-Active Directory Deployment
-Domain Controller Configuration
-DNS Integration
-Authentication Services
-Result
+## Result
 
-Successfully deployed a Windows Server 2022 Domain Controller and created a fully functional Active Directory environment for user and resource management.
+The Windows Server 2022 virtual machine was successfully promoted to a Domain Controller and is now managing authentication, authorization, and directory services for the lab environment.
