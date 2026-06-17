@@ -20,7 +20,7 @@ Install and configure Active Directory Domain Services (AD DS) to create a centr
 4. Complete the installation wizard.
 5. Click **Promote this server to a domain controller**.
 6. Select **Add a new forest**.
-7. Enter the domain name (e.g., company.local).
+7. Enter the domain name G6depot.local.
 8. Configure the Directory Services Restore Mode (DSRM) password.
 9. Complete the installation and restart the server.
 10. Verify the installation using:
