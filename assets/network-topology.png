@@ -1,0 +1,9 @@
+Internet
+     │
+VMware NAT
+     │
+-----------------------
+│                     │
+Windows Server     Windows 11
+Domain Controller    Client
+AD DS + DNS
